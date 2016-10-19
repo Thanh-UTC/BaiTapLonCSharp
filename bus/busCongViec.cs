@@ -32,4 +32,10 @@ class busCongViec
         Console.WriteLine(isDone);
         return isDone;
     }
+    public bool deleteCongViec(CongViec _congviec)
+    {
+        bool isDone = false;
+        isDone = dataCongViec.deleteCongViecInfo(_congviec.IdCongViec);
+        return isDone;
+    }
 }

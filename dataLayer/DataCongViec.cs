@@ -48,5 +48,14 @@ namespace BaiTapLonCSharp.dataLayer
             Console.WriteLine("modifyCongViec true");
             return ioData.excuteModifyQuery(query, sqlPara);
         }
+        public bool deleteCongViecInfo(String _id)
+        {
+            String query = "deleteCongViecInfo";
+            SqlParameter[] sqlPara = new SqlParameter[3];
+            sqlPara[0] = new SqlParameter("@idCongViec", SqlDbType.NChar);
+            sqlPara[0].Value = _id;
+            Console.WriteLine("deleteCongViec true");
+            return ioData.excuteModifyQuery(query, sqlPara);
+        }
     }
 }
