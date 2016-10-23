@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace BaiTapLonCSharp.database
 {
-    class ioConfig
+    class IOConfig
     {
         private SqlDataAdapter dataAdapter;
         private SqlConnection connection = null;
@@ -72,7 +72,7 @@ namespace BaiTapLonCSharp.database
             }
             return true;
         }
-        public bool excuteModifyQuery(String _query, SqlParameter[] _sqlPara)
+        public bool excuteUpdateQuery(String _query, SqlParameter[] _sqlPara)
         {
             connection = Connector.getConnection();
             SqlCommand command = new SqlCommand();

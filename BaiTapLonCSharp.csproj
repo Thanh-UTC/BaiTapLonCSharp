@@ -48,10 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bus\busCongViec.cs" />
+    <Compile Include="bus\BusHoaDonNhap.cs" />
     <Compile Include="database\Connector.cs" />
-    <Compile Include="database\ioConfig.cs" />
+    <Compile Include="database\IOConfig.cs" />
     <Compile Include="dataComponent\CongViec.cs" />
-    <Compile Include="dataLayer\DataCongViec.cs" />
+    <Compile Include="dataComponent\HoaDonNhap.cs" />
+    <Compile Include="dataLayer\dataCongviec.cs" />
+    <Compile Include="dataLayer\DataHoaDonNhap.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
