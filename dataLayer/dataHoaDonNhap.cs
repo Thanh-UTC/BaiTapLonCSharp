@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Threading;
-
+using BaiTapLonCSharp.dataComponent;
 namespace BaiTapLonCSharp.dataLayer
 {
     class DataHoaDonNhap
@@ -25,35 +25,35 @@ namespace BaiTapLonCSharp.dataLayer
             return ioData.excuteSelectQuery(selectQuery, sqlPara);
         }
 
-        public bool insertInfoHoaDonNhap(String _idHoaDonNhap, String _idNhanVien, Timer _dateNhap, String _nameNhaCungCap, String _idHangNhap, String _nameHangNhap, String _amountHangNhap, float _unitPrice,float _totalPrice)
+        public bool insertInfoHoaDonNhap(HoaDonNhap _hoadon)
         {
             String insertQuery = "insertInfoHoaDonNhap";
             SqlParameter[] sqlPara = new SqlParameter[9];
-            sqlPara[0] = new SqlParameter("@idHoaDonNhap", _idHoaDonNhap);
-            sqlPara[1] = new SqlParameter("@idNhanvien", _idNhanVien);
-            sqlPara[2] = new SqlParameter("@dateNhap", _dateNhap);
-            sqlPara[3] = new SqlParameter("@nameNhaCungCap", _nameNhaCungCap);
-            sqlPara[4] = new SqlParameter("@idHangNhap", _idHangNhap);
-            sqlPara[5] = new SqlParameter("@nameHangNhap", _nameHangNhap);
-            sqlPara[6] = new SqlParameter("@amountHangNhap", _amountHangNhap);
-            sqlPara[7] = new SqlParameter("@unitPrice", _unitPrice);
-            sqlPara[8] = new SqlParameter("@totalPrice", _totalPrice);
+            sqlPara[0] = new SqlParameter("@idHoaDonNhap", _hoadon.IdHoaDon);
+            sqlPara[1] = new SqlParameter("@idNhanvien", _hoadon.IdNhanVien);
+            sqlPara[2] = new SqlParameter("@dateNhap", _hoadon.DateNhap);
+            sqlPara[3] = new SqlParameter("@nameNhaCungCap", _hoadon.NameNhaCungCap);
+            sqlPara[4] = new SqlParameter("@idHangNhap", _hoadon.IdHangNhap);
+            sqlPara[5] = new SqlParameter("@nameHangNhap", _hoadon.NameHangNhap);
+            sqlPara[6] = new SqlParameter("@amountHangNhap", _hoadon.AmountHangNhap);
+            sqlPara[7] = new SqlParameter("@unitPrice", _hoadon.UnitPrice);
+            sqlPara[8] = new SqlParameter("@totalPrice", _hoadon.TotalPrice);
             return ioData.excuteInsertQuery(insertQuery, sqlPara);
         }
 
-        public bool updateInfoHoaDonNhap(String _idHoaDonNhap, String _idNhanVien, Timer _dateNhap, String _nameNhaCungCap, String _idHangNhap, String _nameHangNhap, String _amountHangNhap, float _unitPrice, float _totalPrice)
+        public bool updateInfoHoaDonNhap(HoaDonNhap _hoadon)
         {
             String updateQuery = "updateInfoHoaDonNhap";
             SqlParameter[] sqlPara = new SqlParameter[9];
-            sqlPara[0] = new SqlParameter("@idHoaDonNhap", _idHoaDonNhap);
-            sqlPara[1] = new SqlParameter("@idNhanvien", _idNhanVien);
-            sqlPara[2] = new SqlParameter("@dateNhap", _dateNhap);
-            sqlPara[3] = new SqlParameter("@nameNhaCungCap", _nameNhaCungCap);
-            sqlPara[4] = new SqlParameter("@idHangNhap", _idHangNhap);
-            sqlPara[5] = new SqlParameter("@nameHangNhap", _nameHangNhap);
-            sqlPara[6] = new SqlParameter("@amountHangNhap", _amountHangNhap);
-            sqlPara[7] = new SqlParameter("@unitPrice", _unitPrice);
-            sqlPara[8] = new SqlParameter("@totalPrice", _totalPrice);
+            sqlPara[0] = new SqlParameter("@idHoaDonNhap", _hoadon.IdHoaDon);
+            sqlPara[1] = new SqlParameter("@idNhanvien", _hoadon.IdNhanVien);
+            sqlPara[2] = new SqlParameter("@dateNhap", _hoadon.DateNhap);
+            sqlPara[3] = new SqlParameter("@nameNhaCungCap", _hoadon.NameNhaCungCap);
+            sqlPara[4] = new SqlParameter("@idHangNhap", _hoadon.IdHangNhap);
+            sqlPara[5] = new SqlParameter("@nameHangNhap", _hoadon.NameHangNhap);
+            sqlPara[6] = new SqlParameter("@amountHangNhap", _hoadon.AmountHangNhap);
+            sqlPara[7] = new SqlParameter("@unitPrice", _hoadon.UnitPrice);
+            sqlPara[8] = new SqlParameter("@totalPrice", _hoadon.TotalPrice);
             return ioData.excuteUpdateQuery(updateQuery, sqlPara);
         }
 

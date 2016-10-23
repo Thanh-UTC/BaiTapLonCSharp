@@ -28,6 +28,20 @@ namespace BaiTapLonCSharp.bus
         {
             bool isDone = false;
             isDone = data.insertInfoHoaDonNhap(hoadon);
+            return isDone;
+        }
+        public bool updateHoaDonNhap(HoaDonNhap hoadon)
+        {
+            bool isDone = false;
+            isDone = data.updateInfoHoaDonNhap(hoadon);
+            return isDone;
+        }
+
+        public bool deleteHoaDonNhap(HoaDonNhap hoadon)
+        {
+            bool isDone = false;
+            isDone = data.deleteInfoHoaDonNhap(hoadon.IdHoaDon);
+            return isDone;
         }
     }
 }
