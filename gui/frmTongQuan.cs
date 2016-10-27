@@ -13,6 +13,7 @@ namespace BaiTapLonCSharp.gui
     public partial class frmTongQuan : DevExpress.XtraEditors.XtraForm
     {
         private frmHoaDonBan frm_HDBan = null;
+        private frmLogin frm_Login = null;
         public frmTongQuan()
         {
             InitializeComponent();

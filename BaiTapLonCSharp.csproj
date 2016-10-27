@@ -82,6 +82,18 @@
     <Compile Include="gui\frmHoaDonNhap.Designer.cs">
       <DependentUpon>frmHoaDonNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frmLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\frmLoginWinform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frmLoginWinform.Designer.cs">
+      <DependentUpon>frmLoginWinform.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frmTongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmHoaDonNhap.resx">
       <DependentUpon>frmHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frmLoginWinform.resx">
+      <DependentUpon>frmLoginWinform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmTongQuan.resx">
       <DependentUpon>frmTongQuan.cs</DependentUpon>
