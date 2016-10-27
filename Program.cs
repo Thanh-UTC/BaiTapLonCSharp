@@ -17,7 +17,7 @@ namespace BaiTapLonCSharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLoginWinform());
+            Application.Run(new frmTongQuan());
         }
     }
 }
