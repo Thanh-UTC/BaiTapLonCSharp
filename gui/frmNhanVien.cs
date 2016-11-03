@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BaiTapLonCSharp.gui
 {
-    public partial class frmDoiMatKhau : Form
+    public partial class frmNhanVien : Form
     {
-        public frmDoiMatKhau()
+        public frmNhanVien()
         {
             InitializeComponent();
         }

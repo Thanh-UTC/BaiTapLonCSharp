@@ -102,4 +102,3 @@ C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSha
 C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmHoaDonNhap.resources
 C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmLogin.resources
 C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmLoginWinform.resources
-C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmDoiMatKhau.resources

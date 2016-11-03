@@ -94,7 +94,7 @@
             this.repositoryItemTimeEdit1,
             this.repositoryItemTimeSpanEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl1.Size = new System.Drawing.Size(1334, 139);
+            this.ribbonControl1.Size = new System.Drawing.Size(1334, 142);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             // 
@@ -179,7 +179,6 @@
             this.btnDoiMatKhau.Id = 12;
             this.btnDoiMatKhau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDoiMatKhau.LargeGlyph")));
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
-            this.btnDoiMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDoiMatKhau_ItemClick);
             // 
             // btnQuanLiDoiTac
             // 
@@ -285,10 +284,10 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.txtAppName);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 936);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 938);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1334, 25);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1334, 23);
             // 
             // defaultLookAndFeel1
             // 
