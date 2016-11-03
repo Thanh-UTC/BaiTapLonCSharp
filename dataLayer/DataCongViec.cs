@@ -17,8 +17,9 @@ namespace BaiTapLonCSharp.dataLayer
         public DataTable getCongViecInfo()
         {
             String query = "getCongviecInfo";
+            String tableName = "tblCongViec";
             SqlParameter[] sqlPara = new SqlParameter[0];
-            return ioData.excuteSelectQuery(query, sqlPara);
+            return ioData.excuteSelectQuery(query, sqlPara, tableName);
         }
 
         public bool insertCongviecInfo(String _id, String _name, String _salary)

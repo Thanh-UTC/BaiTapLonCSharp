@@ -22,8 +22,9 @@ namespace BaiTapLonCSharp.dataLayer
         public DataTable LayDSNhanVien()
         {
             String query = "LayDSNhanVien";
+            String tableName = "tblNhanVien";
             SqlParameter[] para = new SqlParameter[0];
-            return ioData.excuteSelectQuery(query, para);
+            return ioData.excuteSelectQuery(query, para, tableName);
         }
         #endregion
 

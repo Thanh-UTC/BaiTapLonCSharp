@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BaiTapLonCSharp.bus
 {
@@ -19,9 +20,10 @@ namespace BaiTapLonCSharp.bus
         #region lay thong tin nhan vien
         public DataTable GetInfoNhanvien()
         {
-            NhanVien nhanvien = new NhanVien();
+            //NhanVien nhanvien = new NhanVien();
             DataTable tblNhanVien = new DataTable();
             tblNhanVien = nhanvienData.LayDSNhanVien();
+            //dgv.DataSource = tblNhanVien;
             return tblNhanVien;
         }
         #endregion

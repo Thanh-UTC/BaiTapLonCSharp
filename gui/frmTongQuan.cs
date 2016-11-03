@@ -14,6 +14,7 @@ namespace BaiTapLonCSharp.gui
     {
         private frmHoaDonBan frm_HDBan = null;
         private frmLogin frm_Login = null;
+        private frmNhanVien frm_NhanVien = null;
         public frmTongQuan()
         {
             InitializeComponent();
@@ -30,6 +31,20 @@ namespace BaiTapLonCSharp.gui
             else
             {
                 frm_HDBan.Activate();
+            }
+        }
+
+        private void btnQuanLiNhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm_NhanVien == null || frm_NhanVien.IsDisposed)
+            {
+                frm_NhanVien = new frmNhanVien();
+                frm_NhanVien.MdiParent = frmTongQuan.ActiveForm;
+                frm_NhanVien.Show();
+            }
+            else
+            {
+                frm_NhanVien.Activate();
             }
         }
     }

@@ -46,6 +46,7 @@
             this.btnQuanLiKhachHang = new DevExpress.XtraBars.BarButtonItem();
             this.txtAppName = new DevExpress.XtraBars.BarStaticItem();
             this.txtTime = new DevExpress.XtraBars.BarStaticItem();
+            this.btnQuanLiNhanVien = new DevExpress.XtraBars.BarButtonItem();
             this.tabGiaoDich = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.tabHoaDon = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.tabDoiTac = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -83,9 +84,10 @@
             this.btnQuanLiDoiTac,
             this.btnQuanLiKhachHang,
             this.txtAppName,
-            this.txtTime});
+            this.txtTime,
+            this.btnQuanLiNhanVien});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 7;
+            this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.tabGiaoDich,
@@ -94,7 +96,7 @@
             this.repositoryItemTimeEdit1,
             this.repositoryItemTimeSpanEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl1.Size = new System.Drawing.Size(1334, 142);
+            this.ribbonControl1.Size = new System.Drawing.Size(1334, 139);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             // 
@@ -208,6 +210,14 @@
             this.txtTime.Name = "txtTime";
             this.txtTime.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
+            // btnQuanLiNhanVien
+            // 
+            this.btnQuanLiNhanVien.Caption = "Quản lí nhân viên";
+            this.btnQuanLiNhanVien.Id = 7;
+            this.btnQuanLiNhanVien.LargeGlyph = global::BaiTapLonCSharp.Properties.Resources._4361;
+            this.btnQuanLiNhanVien.Name = "btnQuanLiNhanVien";
+            this.btnQuanLiNhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanLiNhanVien_ItemClick);
+            // 
             // tabGiaoDich
             // 
             this.tabGiaoDich.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -262,6 +272,7 @@
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.btnQuanLiDoiTac);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnQuanLiKhachHang);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnQuanLiNhanVien);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // repositoryItemTimeEdit1
@@ -284,10 +295,10 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.txtAppName);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 938);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 936);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1334, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1334, 25);
             // 
             // defaultLookAndFeel1
             // 
@@ -344,5 +355,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit repositoryItemTimeSpanEdit1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraBars.BarButtonItem btnQuanLiNhanVien;
     }
 }

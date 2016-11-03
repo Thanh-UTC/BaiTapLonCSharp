@@ -13,7 +13,7 @@ namespace BaiTapLonCSharp.database
        
         
 
-        public DataTable excuteSelectQuery(String _query, SqlParameter[] _sqlParameter)
+        public DataTable excuteSelectQuery(String _query, SqlParameter[] _sqlParameter, String _tableName)
         {
             connection = Connector.getConnection();
             SqlCommand command = new SqlCommand();
@@ -30,8 +30,8 @@ namespace BaiTapLonCSharp.database
                 command.Parameters.AddRange(_sqlParameter);
                 //command.ExecuteNonQuery();
                 dataAdapter.SelectCommand = command;
-                dataAdapter.Fill(dataSet);
-                dataTable = dataSet.Tables[0];
+                dataAdapter.Fill(dataSet, _tableName);
+                dataTable = dataSet.Tables[_tableName];
             }
             catch (Exception e)
             {

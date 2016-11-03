@@ -21,8 +21,9 @@ namespace BaiTapLonCSharp.dataLayer
         public DataTable getInfoHoaDonNhap()
         {
             String selectQuery = "getInfoHoaDonNhap";
+            String tableName = "tblHoaDonNhap";
             SqlParameter[] sqlPara = new SqlParameter[0];
-            return ioData.excuteSelectQuery(selectQuery, sqlPara);
+            return ioData.excuteSelectQuery(selectQuery, sqlPara, tableName);
         }
 
         public bool insertInfoHoaDonNhap(HoaDonNhap _hoadon)

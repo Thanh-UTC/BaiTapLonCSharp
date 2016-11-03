@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaiTapLonCSharp.bus;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,20 @@ namespace BaiTapLonCSharp.gui
 {
     public partial class frmNhanVien : Form
     {
+        NhanVienInfo info = new NhanVienInfo();
         public frmNhanVien()
         {
             InitializeComponent();
+        }
+
+        private void dgvDanhSachNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void frmNhanVien_Load(object sender, EventArgs e)
+        {
+            dgvDanhSachNhanVien.DataSource = info.GetInfoNhanvien();
         }
     }
 }
