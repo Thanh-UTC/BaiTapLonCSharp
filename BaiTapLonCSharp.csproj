@@ -62,22 +62,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bus\BusCongViec.cs" />
     <Compile Include="bus\BusHoaDonNhap.cs" />
+    <Compile Include="bus\CongViecInfo.cs" />
     <Compile Include="bus\NhanVienInfo.cs" />
     <Compile Include="database\Connector.cs" />
     <Compile Include="database\IOConfig.cs" />
     <Compile Include="dataComponent\CongViec.cs" />
     <Compile Include="dataComponent\HoaDonNhap.cs" />
     <Compile Include="dataComponent\NhanVien.cs" />
-    <Compile Include="dataLayer\dataCongviec.cs" />
+    <Compile Include="dataLayer\CongViecData.cs" />
     <Compile Include="dataLayer\DataHoaDonNhap.cs" />
     <Compile Include="dataLayer\NhanVienData.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="gui\frmCongViec.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="gui\frmCongViec.Designer.cs">
+      <DependentUpon>frmCongViec.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frmHoaDonNhap.cs">
       <SubType>Form</SubType>
@@ -117,8 +117,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="gui\frmCongViec.resx">
+      <DependentUpon>frmCongViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frmHoaDonNhap.resx">
       <DependentUpon>frmHoaDonNhap.cs</DependentUpon>

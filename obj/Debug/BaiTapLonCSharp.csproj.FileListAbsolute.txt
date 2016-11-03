@@ -1,6 +1,5 @@
 c:\users\dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\bin\Debug\BaiTapLonCSharp.exe.config
 c:\users\dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.csprojResolveAssemblyReference.cache
-c:\users\dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.Form1.resources
 c:\users\dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.Properties.Resources.resources
 c:\users\dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.csproj.GenerateResource.Cache
 c:\users\dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\bin\Debug\BaiTapLonCSharp.exe
@@ -103,3 +102,4 @@ C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSha
 C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmLogin.resources
 C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmLoginWinform.resources
 C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmNhanVien.resources
+C:\Users\Dao\documents\visual studio 2015\Projects\BaiTapLonCSharp\BaiTapLonCSharp\obj\Debug\BaiTapLonCSharp.gui.frmCongViec.resources

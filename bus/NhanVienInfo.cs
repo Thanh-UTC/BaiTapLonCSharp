@@ -12,18 +12,25 @@ namespace BaiTapLonCSharp.bus
 {
     class NhanVienInfo
     {
-        NhanVienData nhanvienData;
+        NhanVienData nhanvienData = new NhanVienData();
+        CongViecInfo congviecInfo = new CongViecInfo();
         public NhanVienInfo()
         {
             nhanvienData = new NhanVienData();
         }
         #region lay thong tin nhan vien
-        public DataTable GetInfoNhanvien()
+        public DataTable GetInfoNhanvien ()
         {
-            //NhanVien nhanvien = new NhanVien();
+            
             DataTable tblNhanVien = new DataTable();
+            DataTable tblCongViec = new DataTable();
+            //DataTable combineTable = new DataTable();
+            //combineTable = tblNhanVien.Copy();
+            //combineTable.Merge(tblCongViec);
+
             tblNhanVien = nhanvienData.LayDSNhanVien();
-            //dgv.DataSource = tblNhanVien;
+            tblCongViec = congviecInfo.GetInfoCongViec();
+            
             return tblNhanVien;
         }
         #endregion
