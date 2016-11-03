@@ -7,31 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BaiTapLonCSharp.database;
 namespace BaiTapLonCSharp.bus
 {
     class NhanVienInfo
     {
         NhanVienData nhanvienData = new NhanVienData();
-        CongViecInfo congviecInfo = new CongViecInfo();
+        //CongViecInfo congviecInfo = new CongViecInfo();
         public NhanVienInfo()
         {
             nhanvienData = new NhanVienData();
         }
         #region lay thong tin nhan vien
-        public DataTable GetInfoNhanvien ()
+        public void GetInfoNhanvien (DataGridView dgv)
         {
             
             DataTable tblNhanVien = new DataTable();
-            DataTable tblCongViec = new DataTable();
+            //DataTable tblCongViec = new DataTable();
             //DataTable combineTable = new DataTable();
             //combineTable = tblNhanVien.Copy();
             //combineTable.Merge(tblCongViec);
-
-            tblNhanVien = nhanvienData.LayDSNhanVien();
-            tblCongViec = congviecInfo.GetInfoCongViec();
             
-            return tblNhanVien;
+            tblNhanVien = nhanvienData.LayDSNhanVien();
+            dgv.DataSource = tblNhanVien;
+            
+            //return tblNhanVien;
         }
         #endregion
 

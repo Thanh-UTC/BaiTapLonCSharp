@@ -62,6 +62,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BTLCSharpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLCSharpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLCSharpDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLCSharpDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BTLCSharpDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BTLCSharpDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="bus\BusHoaDonNhap.cs" />
     <Compile Include="bus\CongViecInfo.cs" />
     <Compile Include="bus\NhanVienInfo.cs" />
@@ -149,7 +164,41 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BTLCSharpDataSet.xsc">
+      <DependentUpon>BTLCSharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLCSharpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLCSharpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLCSharpDataSet.xss">
+      <DependentUpon>BTLCSharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BTLCSharpDataSet1.xsc">
+      <DependentUpon>BTLCSharpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BTLCSharpDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLCSharpDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLCSharpDataSet1.xss">
+      <DependentUpon>BTLCSharpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BTLCSharpDataSet2.xsc">
+      <DependentUpon>BTLCSharpDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BTLCSharpDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BTLCSharpDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BTLCSharpDataSet2.xss">
+      <DependentUpon>BTLCSharpDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\BaiTapLonCSharp.bus.NhanVienInfo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

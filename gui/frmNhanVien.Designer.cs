@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblMaNhanVien = new System.Windows.Forms.Label();
             this.lblTenNhanVien = new System.Windows.Forms.Label();
             this.lbNgaySinh = new System.Windows.Forms.Label();
@@ -45,8 +46,13 @@
             this.rdoNu = new System.Windows.Forms.RadioButton();
             this.rdoNam = new System.Windows.Forms.RadioButton();
             this.dgvDanhSachNhanVien = new System.Windows.Forms.DataGridView();
+            this.ColumnAddFunction = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnUpdateFunction = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnDeleteFunction = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.nhanVienInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMaNhanVien
@@ -190,12 +196,39 @@
             // 
             // dgvDanhSachNhanVien
             // 
+            this.dgvDanhSachNhanVien.AllowUserToResizeColumns = false;
             this.dgvDanhSachNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhSachNhanVien.Location = new System.Drawing.Point(59, 194);
+            this.dgvDanhSachNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnAddFunction,
+            this.ColumnUpdateFunction,
+            this.ColumnDeleteFunction});
+            this.dgvDanhSachNhanVien.Location = new System.Drawing.Point(39, 197);
             this.dgvDanhSachNhanVien.Name = "dgvDanhSachNhanVien";
-            this.dgvDanhSachNhanVien.Size = new System.Drawing.Size(1197, 409);
+            this.dgvDanhSachNhanVien.Size = new System.Drawing.Size(1204, 410);
             this.dgvDanhSachNhanVien.TabIndex = 14;
             this.dgvDanhSachNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachNhanVien_CellClick);
+            // 
+            // ColumnAddFunction
+            // 
+            this.ColumnAddFunction.HeaderText = "";
+            this.ColumnAddFunction.Name = "ColumnAddFunction";
+            this.ColumnAddFunction.Width = 20;
+            // 
+            // ColumnUpdateFunction
+            // 
+            this.ColumnUpdateFunction.HeaderText = "";
+            this.ColumnUpdateFunction.Name = "ColumnUpdateFunction";
+            this.ColumnUpdateFunction.Width = 20;
+            // 
+            // ColumnDeleteFunction
+            // 
+            this.ColumnDeleteFunction.HeaderText = "";
+            this.ColumnDeleteFunction.Name = "ColumnDeleteFunction";
+            this.ColumnDeleteFunction.Width = 20;
+            // 
+            // nhanVienInfoBindingSource
+            // 
+            this.nhanVienInfoBindingSource.DataSource = typeof(BaiTapLonCSharp.bus.NhanVienInfo);
             // 
             // frmNhanVien
             // 
@@ -223,6 +256,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienInfoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +281,9 @@
         private System.Windows.Forms.RadioButton rdoNu;
         private System.Windows.Forms.RadioButton rdoNam;
         private System.Windows.Forms.DataGridView dgvDanhSachNhanVien;
+        private System.Windows.Forms.BindingSource nhanVienInfoBindingSource;
+        private System.Windows.Forms.DataGridViewButtonColumn ColumnAddFunction;
+        private System.Windows.Forms.DataGridViewButtonColumn ColumnUpdateFunction;
+        private System.Windows.Forms.DataGridViewButtonColumn ColumnDeleteFunction;
     }
 }

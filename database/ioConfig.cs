@@ -9,9 +9,9 @@ namespace BaiTapLonCSharp.database
     {
         private SqlDataAdapter dataAdapter;
         private SqlConnection connection = null;
-        
        
-        
+
+
 
         public DataTable excuteSelectQuery(String _query, SqlParameter[] _sqlParameter, String _tableName)
         {
@@ -32,6 +32,7 @@ namespace BaiTapLonCSharp.database
                 dataAdapter.SelectCommand = command;
                 dataAdapter.Fill(dataSet, _tableName);
                 dataTable = dataSet.Tables[_tableName];
+
             }
             catch (Exception e)
             {
